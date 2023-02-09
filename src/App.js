@@ -1,10 +1,10 @@
 import './App.css';
-import Form from './components/Form';
+import UnderConstructionMessage from './components/UnderConstructionMessage/UnderConstructionMessage';
 
 function App() {
     return (
         <div className="App">
-            <Form />
+            <UnderConstructionMessage />
         </div>
     );
 }
