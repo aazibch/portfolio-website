@@ -3,6 +3,7 @@ import { Box, Container } from '@mui/material';
 const SectionContainer = (props) => {
     return (
         <Box
+            id={props.id}
             sx={{
                 borderColor: 'divider',
                 borderBottomStyle: 'solid',

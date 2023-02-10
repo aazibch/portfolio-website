@@ -8,7 +8,7 @@ import SectionContainer from '../../components/SectionContainer/SectionContainer
 
 const AboutSection = () => {
     return (
-        <SectionContainer>
+        <SectionContainer id="about">
             <SectionStack>
                 <SectionItem>
                     <img className="sectionMainImage" src={AboutImg} alt="" />

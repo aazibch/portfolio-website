@@ -1,8 +1,8 @@
 import {
     AppBar,
     Box,
-    Button,
     IconButton,
+    Link,
     Menu,
     MenuItem,
     Switch,
@@ -20,8 +20,8 @@ const sections = [
         anchor: '#about'
     },
     {
-        title: 'Portfolio',
-        anchor: '#portfolio'
+        title: 'Projects',
+        anchor: '#projects'
     },
     {
         title: 'Contact',
@@ -42,7 +42,7 @@ const Header = (props) => {
 
     return (
         <AppBar
-            position="sticky"
+            position="static"
             sx={{
                 backgroundColor: 'background.default',
                 color: 'text.primary',
@@ -139,22 +139,23 @@ const Header = (props) => {
                             display: { xs: 'none', md: 'flex' }
                         }}
                     >
-                        {sections.map((section) => (
-                            <Button
-                                component="a"
-                                href={section.anchor}
-                                key={section.title}
-                                sx={{
-                                    my: 2,
-                                    color: 'inherit',
-                                    display: 'block',
-                                    textTransform: 'none',
-                                    fontWeight: 400
-                                }}
-                            >
-                                {section.title}
-                            </Button>
-                        ))}
+                        {sections.map((section) => {
+                            return (
+                                <Link
+                                    underline="none"
+                                    href={section.anchor}
+                                    key={section.title}
+                                    sx={{
+                                        color: 'inherit',
+                                        textTransform: 'none',
+                                        fontWeight: 400,
+                                        m: 1
+                                    }}
+                                >
+                                    {section.title}
+                                </Link>
+                            );
+                        })}
                     </Box>
 
                     <Box

@@ -8,7 +8,7 @@ import SectionContainer from '../../components/SectionContainer/SectionContainer
 
 const HeroSection = () => {
     return (
-        <SectionContainer>
+        <SectionContainer id="hero">
             <SectionStack>
                 <SectionItem>
                     <Box>
@@ -23,7 +23,7 @@ const HeroSection = () => {
                         <Typography
                             color="text.secondary"
                             component="p"
-                            fontSize="1.5rem"
+                            fontSize="1.65rem"
                         >
                             I'm Aazib Chaudhry, a full-stack developer working
                             to make the web a more intuitive, accessible, and
