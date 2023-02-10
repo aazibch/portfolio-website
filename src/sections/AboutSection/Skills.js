@@ -3,7 +3,7 @@ import { Box, Grid, styled } from '@mui/material';
 const skills = [
     'HTML',
     'CSS',
-    'SASS',
+    'SCSS',
     'JavaScript',
     'React',
     'Node',
@@ -12,8 +12,7 @@ const skills = [
     'PHP',
     'SQL',
     'MySQL',
-    'Bash',
-    'Linux'
+    'Bash'
 ];
 
 const StyledBox = styled(Box)(({ theme }) => ({
@@ -34,10 +33,8 @@ const Skills = () => {
     return (
         <Grid container spacing={2}>
             {skills.map((skill) => (
-                <Grid item xs={3}>
-                    <StyledBox elevation={2} sx={{}}>
-                        {skill}
-                    </StyledBox>
+                <Grid item xs={6} sm={3}>
+                    <StyledBox elevation={2}>{skill}</StyledBox>
                 </Grid>
             ))}
         </Grid>

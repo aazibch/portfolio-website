@@ -52,10 +52,10 @@ const Header = (props) => {
             }}
             elevation={0}
         >
-            <Container sx={{ px: '10rem' }} maxWidth="lg">
+            <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <Typography
-                        variant="h6"
+                        variant="h5"
                         component="a"
                         href="#hero"
                         sx={{

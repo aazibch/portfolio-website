@@ -2,9 +2,8 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import { Box } from '@mui/system';
 import { useState } from 'react';
 import './App.css';
-import HeroSection from './sections/HeroSection/HeroSection';
 import Layout from './components/Layout/Layout';
-import AboutSection from './sections/AboutSection/AboutSection';
+import Sections from './components/Sections/Sections';
 
 function App() {
     const [themeMode, setThemeMode] = useState('light');
@@ -22,6 +21,41 @@ function App() {
         palette: {
             mode: themeMode,
             ...palette
+        },
+        breakpoints: {
+            values: {
+                xs: 0,
+                sm: 600,
+                md: 900,
+                lg: 1320,
+                xl: 1536
+            }
+        },
+        typography: {
+            h1: {
+                fontWeight: 400,
+                fontSize: '2.5rem'
+            },
+            h2: {
+                fontWeight: 400,
+                fontSize: '2rem'
+            },
+            h3: {
+                fontWeight: 400,
+                fontSize: '1.75rem'
+            },
+            h4: {
+                fontWeight: 400,
+                fontSize: '1.5rem'
+            },
+            h5: {
+                fontWeight: 400,
+                fontSize: '1.25rem'
+            },
+            h6: {
+                fontWeight: 400,
+                fontSize: '1rem'
+            }
         }
     });
 
@@ -41,8 +75,7 @@ function App() {
         <ThemeProvider theme={siteTheme}>
             <Box bgcolor="background.default">
                 <Layout handleThemeMode={handleThemeMode}>
-                    <HeroSection />
-                    <AboutSection />
+                    <Sections />
                 </Layout>
             </Box>
         </ThemeProvider>
