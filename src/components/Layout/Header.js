@@ -45,11 +45,14 @@ const Header = (props) => {
             position="sticky"
             sx={{
                 backgroundColor: 'background.default',
-                color: 'text.primary'
+                color: 'text.primary',
+                borderColor: 'divider',
+                borderBottomStyle: 'solid',
+                borderWidth: '1px'
             }}
             elevation={0}
         >
-            <Container maxWidth="xl">
+            <Container sx={{ px: '10rem' }} maxWidth="lg">
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
