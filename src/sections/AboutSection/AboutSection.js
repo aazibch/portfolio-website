@@ -45,7 +45,7 @@ const AboutSection = () => {
                             fontSize="1.25rem"
                             mb={4}
                         >
-                            I'm also a Linux enthusiast, and I like exploring
+                            I'm also a Linux enthusiast, and I enjoy exploring
                             different distributions, desktop environments, and
                             window managers. In my spare time, I like to read
                             and ponder age-old philosophical conundrums.
