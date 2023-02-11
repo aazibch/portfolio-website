@@ -62,11 +62,10 @@ const Header = (props) => {
                             textDecoration: 'none',
                             color: 'inherit',
                             mr: 2,
-                            fontWeight: 400,
                             display: { xs: 'none', md: 'flex' }
                         }}
                     >
-                        AazibCh
+                        Aazib Chaudhry
                     </Typography>
                     <Box
                         sx={{
@@ -130,7 +129,7 @@ const Header = (props) => {
                             display: { xs: 'flex', md: 'none' }
                         }}
                     >
-                        AazibCh
+                        Aazib Chaudhry
                     </Typography>
 
                     <Box

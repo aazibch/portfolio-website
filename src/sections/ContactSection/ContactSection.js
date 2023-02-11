@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
@@ -7,11 +8,22 @@ import SectionStack from '../../components/SectionStack/SectionStack';
 
 import ContactImg from './contact.svg';
 import ContactForm from './ContactForm/ContactForm';
+import Modal from '../../components/UI/Modal/Modal';
 
 const ContactSection = () => {
+    const [modelOpen, setModelOpen] = useState(false);
+
+    const handleModelOpen = () => {
+        setModelOpen(true);
+    };
+
+    const handleModelClose = () => {
+        setModelOpen(false);
+    };
+
     return (
         <SectionContainer id="contact">
-            <SectionStack>
+            <SectionStack direction={{ xs: 'column-reverse', md: 'row' }}>
                 <SectionItem>
                     <Box flexGrow="1">
                         <Typography
@@ -22,7 +34,14 @@ const ContactSection = () => {
                         >
                             Contact
                         </Typography>
-                        <ContactForm />
+                        <ContactForm handleModelOpen={handleModelOpen} />
+                        <Modal
+                            title="Contact Directly"
+                            open={modelOpen}
+                            onClose={handleModelClose}
+                        >
+                            <Typography>Email: aazibch47@gmail.com</Typography>
+                        </Modal>
                     </Box>
                 </SectionItem>
                 <SectionItem>

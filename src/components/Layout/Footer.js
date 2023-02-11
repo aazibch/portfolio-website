@@ -28,7 +28,7 @@ const Footer = () => {
             >
                 <Box color="text.primary" mb={{ xs: 2, sm: 0 }}>
                     <Typography variant="h4" mb={1}>
-                        AazibCh
+                        Aazib Chaudhry
                     </Typography>
                     <Typography>Copyright © 2023</Typography>
                 </Box>

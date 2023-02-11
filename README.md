@@ -1,4 +1,4 @@
-# AazibCh
+# Aazib Chaudhry
 
 Aazib Chaudhry's portfolio website.
 

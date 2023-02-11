@@ -9,7 +9,7 @@ import SectionContainer from '../../components/SectionContainer/SectionContainer
 const HeroSection = () => {
     return (
         <SectionContainer id="hero">
-            <SectionStack>
+            <SectionStack direction={{ xs: 'column-reverse', md: 'row' }}>
                 <SectionItem>
                     <Box>
                         <Typography

@@ -2,7 +2,10 @@ import { Stack } from '@mui/system';
 
 const SectionStack = (props) => {
     return (
-        <Stack direction={{ xs: 'column', md: 'row' }} spacing="50px">
+        <Stack
+            direction={props.direction || { xs: 'column', md: 'row' }}
+            spacing="40px"
+        >
             {props.children}
         </Stack>
     );
