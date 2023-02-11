@@ -5,10 +5,7 @@ const SectionContainer = (props) => {
         <Box
             id={props.id}
             sx={{
-                borderColor: 'divider',
-                borderBottomStyle: 'solid',
-                borderWidth: '1px',
-                py: 10
+                py: 8
             }}
         >
             <Container>{props.children}</Container>

@@ -69,7 +69,7 @@ const ProjectsGrid = () => {
         <Grid container spacing={2}>
             {projects.map((project) => {
                 return (
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid key={project.title} item xs={12} sm={6} md={4}>
                         <Project
                             title={project.title}
                             tech={project.tech}

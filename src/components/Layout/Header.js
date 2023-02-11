@@ -118,7 +118,7 @@ const Header = (props) => {
                         </Menu>
                     </Box>
                     <Typography
-                        variant="h6"
+                        variant="h5"
                         component="a"
                         href="#hero"
                         sx={{
@@ -167,7 +167,10 @@ const Header = (props) => {
                         }}
                     >
                         <DarkMode sx={{ fontSize: 30, color: 'grey' }} />
-                        <Switch onChange={props.handleThemeMode} />
+                        <Switch
+                            checked={props.themeMode === 'dark'}
+                            onChange={props.handleThemeMode}
+                        />
                     </Box>
                 </Toolbar>
             </Container>

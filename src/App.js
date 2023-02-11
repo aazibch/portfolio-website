@@ -1,63 +1,34 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Box } from '@mui/system';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Layout from './components/Layout/Layout';
 import Sections from './components/Sections/Sections';
+import getThemeConfig from './theme';
 
 function App() {
     const [themeMode, setThemeMode] = useState('light');
+    const [firstRun, setFirstRun] = useState(true);
 
-    const palette =
-        themeMode === 'light'
-            ? {
-                  background: {
-                      default: '#FFFFFF'
-                  }
-              }
-            : {};
+    useEffect(() => {
+        if (firstRun) {
+            const theme = localStorage.getItem('themeMode');
 
-    const siteTheme = createTheme({
-        palette: {
-            mode: themeMode,
-            ...palette
-        },
-        breakpoints: {
-            values: {
-                xs: 0,
-                sm: 600,
-                md: 900,
-                lg: 1320,
-                xl: 1536
+            if (!theme) {
+                localStorage.setItem('themeMode', themeMode);
+            } else {
+                setThemeMode(theme);
             }
-        },
-        typography: {
-            h1: {
-                fontWeight: 400,
-                fontSize: '2.5rem'
-            },
-            h2: {
-                fontWeight: 400,
-                fontSize: '2rem'
-            },
-            h3: {
-                fontWeight: 400,
-                fontSize: '1.75rem'
-            },
-            h4: {
-                fontWeight: 400,
-                fontSize: '1.5rem'
-            },
-            h5: {
-                fontWeight: 400,
-                fontSize: '1.25rem'
-            },
-            h6: {
-                fontWeight: 400,
-                fontSize: '1rem'
-            }
+
+            setFirstRun(false);
         }
-    });
+
+        if (!firstRun) {
+            localStorage.setItem('themeMode', themeMode);
+        }
+    }, [themeMode, firstRun]);
+
+    const siteTheme = createTheme(getThemeConfig(themeMode));
 
     const handleThemeMode = () => {
         setThemeMode((prevThemeMode) => {
@@ -74,7 +45,7 @@ function App() {
     return (
         <ThemeProvider theme={siteTheme}>
             <Box bgcolor="background.default">
-                <Layout handleThemeMode={handleThemeMode}>
+                <Layout handleThemeMode={handleThemeMode} themeMode={themeMode}>
                     <Sections />
                 </Layout>
             </Box>

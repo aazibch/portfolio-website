@@ -33,7 +33,7 @@ const Skills = () => {
     return (
         <Grid container spacing={2}>
             {skills.map((skill) => (
-                <Grid item xs={6} sm={3}>
+                <Grid key={skill} item xs={6} sm={3}>
                     <StyledBox elevation={2}>{skill}</StyledBox>
                 </Grid>
             ))}
