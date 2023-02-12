@@ -28,7 +28,7 @@ const ContactSection = () => {
                     <Box flexGrow="1">
                         <Typography
                             color="text.primary"
-                            component="h3"
+                            component="h2"
                             variant="h4"
                             mb={3}
                         >

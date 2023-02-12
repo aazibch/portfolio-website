@@ -27,7 +27,7 @@ const Footer = () => {
                 textAlign={{ xs: 'center', sm: 'initial' }}
             >
                 <Box color="text.primary" mb={{ xs: 2, sm: 0 }}>
-                    <Typography variant="h4" mb={1}>
+                    <Typography component="p" variant="h4" mb={1}>
                         Aazib Chaudhry
                     </Typography>
                     <Typography>Copyright © 2023</Typography>

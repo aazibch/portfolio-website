@@ -17,7 +17,7 @@ const AboutSection = () => {
                     <Box>
                         <Typography
                             color="text.primary"
-                            component="h3"
+                            component="h2"
                             variant="h4"
                             mb={2}
                         >

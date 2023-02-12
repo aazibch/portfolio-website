@@ -7,7 +7,7 @@ import ProjectsGrid from './ProjectsGrid';
 const ProjectsSection = () => {
     return (
         <SectionContainer id="projects">
-            <Typography color="text.primary" component="h3" variant="h4" mb={3}>
+            <Typography color="text.primary" component="h2" variant="h4" mb={3}>
                 Projects
             </Typography>
             <ProjectsGrid />
