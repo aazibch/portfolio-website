@@ -31,7 +31,7 @@ const AboutSection = () => {
                         >
                             I've been developing web applications for the past
                             two years. Having a passion for knowledge and
-                            experimentation, I have acquired a deep level of
+                            experimentation, I've acquired a deep level of
                             understanding of the various technologies I use. My
                             strong communication skills and attention to design,
                             combined with my programming expertise, allow me to
