@@ -4,8 +4,11 @@ import JokeSlidesScreen from './screenshots/jokeslides.png';
 import ReadsTrackerScreen from './screenshots/readstracker.png';
 import PoemPadScreen from './screenshots/poempad.png';
 import SimonScreen from './screenshots/simon.png';
+import YumYumScreen from './screenshots/yumyum.png';
 import VirtuaVisageScreen from './screenshots/virtuavisage.png';
 import CummingsBreitenbergScreen from './screenshots/cummingsbreitenberg.png';
+import WebsoftScreen from './screenshots/websoft.png';
+import ExpenseTrackerScreen from './screenshots/expensetracker.png';
 
 const projects = [
   {
@@ -30,7 +33,7 @@ const projects = [
     tech: ['React', 'Express', 'MongoDB'],
     image: JokeSlidesScreen,
     links: {
-      demo: 'https://jokeslides.up.railway.app/',
+      demo: 'https://jokeslides.onrender.com/',
       repo: 'https://github.com/aazibch/jokeslides'
     }
   },
@@ -39,8 +42,26 @@ const projects = [
     tech: ['Pug', 'Express', 'MongoDB'],
     image: ReadsTrackerScreen,
     links: {
-      demo: 'https://readstracker.up.railway.app/',
+      demo: 'https://readstracker.onrender.com/',
       repo: 'https://github.com/aazibch/readstracker'
+    }
+  },
+  {
+    title: 'Expense Tracker',
+    tech: ['React'],
+    image: ExpenseTrackerScreen,
+    links: {
+      demo: 'https://expense-tracker-production.netlify.app/',
+      repo: 'https://github.com/aazibch/expense-tracker'
+    }
+  },
+  {
+    title: 'YumYum',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+    image: YumYumScreen,
+    links: {
+      demo: 'https://yumyum-production.netlify.app/',
+      repo: 'https://github.com/aazibch/yumyum/'
     }
   },
   {
@@ -59,6 +80,15 @@ const projects = [
     links: {
       demo: 'https://simon-production.netlify.app/',
       repo: 'https://github.com/aazibch/simon'
+    }
+  },
+  {
+    title: 'Websoft',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    image: WebsoftScreen,
+    links: {
+      demo: 'https://websoft.onrender.com/',
+      repo: 'https://github.com/aazibch/websoft'
     }
   }
 ];
