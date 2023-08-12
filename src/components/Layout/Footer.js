@@ -7,6 +7,10 @@ const socialLinks = [
     link: 'https://github.com/aazibch/'
   },
   {
+    site: 'CodePen',
+    link: 'https://codepen.io/aazibch'
+  },
+  {
     site: 'Twitter',
     link: 'https://twitter.com/AazibCh'
   },
