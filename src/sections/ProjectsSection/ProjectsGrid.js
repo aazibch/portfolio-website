@@ -2,15 +2,25 @@ import { Grid } from '@mui/material';
 import Project from './Project';
 import JokeSlidesScreen from './screenshots/jokeslides.png';
 import ReadsTrackerScreen from './screenshots/readstracker.png';
-import PoemPadScreen from './screenshots/poempad.png';
+// import PoemPadScreen from './screenshots/poempad.png';
 import SimonScreen from './screenshots/simon.png';
 import YumYumScreen from './screenshots/yumyum.png';
 import VirtuaVisageScreen from './screenshots/virtuavisage.png';
 import CummingsBreitenbergScreen from './screenshots/cummingsbreitenberg.png';
 import WebsoftScreen from './screenshots/websoft.png';
 import ExpenseTrackerScreen from './screenshots/expensetracker.png';
+import ZephyrMessengerScreen from './screenshots/zephyrmessenger.png';
 
 const projects = [
+  {
+    title: 'ZephyrMessenger',
+    tech: ['React', 'React Router 6', 'Express', 'MongoDB'],
+    image: ZephyrMessengerScreen,
+    links: {
+      demo: 'https://zephyr-messenger.onrender.com/',
+      repo: 'https://github.com/aazibch/zephyr-messenger'
+    }
+  },
   {
     title: 'VirtuaVisage',
     tech: ['React', 'Express', 'MongoDB'],
@@ -62,15 +72,6 @@ const projects = [
     links: {
       demo: 'https://yumyum-production.netlify.app/',
       repo: 'https://github.com/aazibch/yumyum/'
-    }
-  },
-  {
-    title: 'PoemPad',
-    tech: ['HTML', 'SCSS', 'JavaScript', 'Webpack'],
-    image: PoemPadScreen,
-    links: {
-      demo: 'https://poempad.netlify.app/',
-      repo: 'https://github.com/aazibch/poempad'
     }
   },
   {
