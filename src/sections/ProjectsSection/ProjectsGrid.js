@@ -2,7 +2,6 @@ import { Grid } from '@mui/material';
 import Project from './Project';
 import JokeSlidesScreen from './screenshots/jokeslides.png';
 import ReadsTrackerScreen from './screenshots/readstracker.png';
-// import PoemPadScreen from './screenshots/poempad.png';
 import SimonScreen from './screenshots/simon.png';
 import YumYumScreen from './screenshots/yumyum.png';
 import VirtuaVisageScreen from './screenshots/virtuavisage.png';
