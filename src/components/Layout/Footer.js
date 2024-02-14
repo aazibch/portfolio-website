@@ -21,6 +21,8 @@ const socialLinks = [
 ];
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Container>
       <Stack
@@ -34,7 +36,7 @@ const Footer = () => {
           <Typography component="p" variant="h4" mb={1}>
             Aazib Chaudhry
           </Typography>
-          <Typography>Copyright © 2023</Typography>
+          <Typography>Copyright © {currentYear}</Typography>
         </Box>
         <Box>
           {socialLinks.map((socialLink) => (
