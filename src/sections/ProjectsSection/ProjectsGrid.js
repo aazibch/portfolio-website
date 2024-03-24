@@ -13,11 +13,11 @@ import GreenEatsScreen from './screenshots/greeneats.png';
 const projects = [
   {
     title: 'GreenEats',
-    tech: ['Next', 'SQLite', 'AWS S3'],
+    tech: ['Next', 'MongoDB', 'Auth.js', 'AWS S3'],
     image: GreenEatsScreen,
     links: {
-      demo: 'https://greeneats-demo.netlify.app/',
-      repo: 'https://github.com/aazibch/greeneats/'
+      demo: 'https://greeneats-app.netlify.app/',
+      repo: 'https://github.com/aazibch/greeneats/tree/transition-mongodb'
     }
   },
   {
