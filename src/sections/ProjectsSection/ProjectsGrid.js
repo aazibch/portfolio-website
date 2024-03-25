@@ -16,7 +16,7 @@ const projects = [
     tech: ['Next', 'MongoDB', 'Auth.js', 'AWS S3'],
     image: GreenEatsScreen,
     links: {
-      demo: 'https://greeneats-demo.netlify.app/',
+      demo: 'https://greeneats.onrender.com/',
       repo: 'https://github.com/aazibch/greeneats'
     }
   },
