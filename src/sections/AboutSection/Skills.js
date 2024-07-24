@@ -14,6 +14,7 @@ const skills = [
   'PHP',
   'SQL',
   'MySQL',
+  'WordPress',
   'Bash'
 ];
 

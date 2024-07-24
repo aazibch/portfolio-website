@@ -56,12 +56,12 @@ const projects = [
     }
   },
   {
-    title: 'Expense Tracker',
-    tech: ['React'],
-    image: ExpenseTrackerScreen,
+    title: 'Websoft',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    image: WebsoftScreen,
     links: {
-      demo: 'https://expense-tracker-production.netlify.app/',
-      repo: 'https://github.com/aazibch/expense-tracker/'
+      demo: 'https://websoft.onrender.com/',
+      repo: 'https://github.com/aazibch/websoft/'
     }
   },
   {
@@ -74,21 +74,21 @@ const projects = [
     }
   },
   {
+    title: 'Expense Tracker',
+    tech: ['React'],
+    image: ExpenseTrackerScreen,
+    links: {
+      demo: 'https://expense-tracker-production.netlify.app/',
+      repo: 'https://github.com/aazibch/expense-tracker/'
+    }
+  },
+  {
     title: 'Simon Game',
     tech: ['HTML', 'CSS', 'JavaScript'],
     image: SimonScreen,
     links: {
       demo: 'https://simon-production.netlify.app/',
       repo: 'https://github.com/aazibch/simon/'
-    }
-  },
-  {
-    title: 'Websoft',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    image: WebsoftScreen,
-    links: {
-      demo: 'https://websoft.onrender.com/',
-      repo: 'https://github.com/aazibch/websoft/'
     }
   }
 ];
