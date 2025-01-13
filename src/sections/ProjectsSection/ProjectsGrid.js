@@ -6,14 +6,23 @@ import YumYumScreen from './screenshots/yumyum.png';
 import VirtuaVisageScreen from './screenshots/virtuavisage.png';
 import CummingsBreitenbergScreen from './screenshots/cummingsbreitenberg.png';
 import WebsoftScreen from './screenshots/websoft.png';
-import ExpenseTrackerScreen from './screenshots/expensetracker.png';
 import ZephyrMessengerScreen from './screenshots/zephyrmessenger.png';
 import GreenEatsScreen from './screenshots/greeneats.png';
+import TheGhazalProjectScreen from './screenshots/theghazalproject.png';
 
 const projects = [
   {
+    title: 'The Ghazal Project',
+    tech: ['Next', 'MongoDB', 'NextAuth'],
+    image: TheGhazalProjectScreen,
+    links: {
+      demo: 'https://theghazalproject.com/',
+      repo: 'https://github.com/aazibch/theghazalproject'
+    }
+  },
+  {
     title: 'GreenEats',
-    tech: ['Next', 'MongoDB', 'Auth.js', 'AWS S3'],
+    tech: ['Next', 'MongoDB', 'Auth.js'],
     image: GreenEatsScreen,
     links: {
       demo: 'https://greeneats.onrender.com/',
@@ -71,15 +80,6 @@ const projects = [
     links: {
       demo: 'https://yumyum-production.netlify.app/',
       repo: 'https://github.com/aazibch/yumyum/'
-    }
-  },
-  {
-    title: 'Expense Tracker',
-    tech: ['React'],
-    image: ExpenseTrackerScreen,
-    links: {
-      demo: 'https://expense-tracker-production.netlify.app/',
-      repo: 'https://github.com/aazibch/expense-tracker/'
     }
   },
   {
