@@ -111,7 +111,9 @@ const Header = (props) => {
                   component="a"
                   href={navLink.anchor}
                   key={navLink.title}
-                  sx={{ textTransform: 'none' }}
+                  sx={{
+                    textTransform: 'none'
+                  }}
                   onClick={handleCloseNavMenu}
                   target={navLink.external ? '_blank' : '_self'}
                 >
@@ -153,7 +155,8 @@ const Header = (props) => {
                     color: 'inherit',
                     textTransform: 'none',
                     fontWeight: 400,
-                    m: 1
+                    m: 1,
+                    '&:hover': { color: 'text.secondary' }
                   }}
                 >
                   {navLink.title}
