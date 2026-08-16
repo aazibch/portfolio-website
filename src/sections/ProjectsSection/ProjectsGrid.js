@@ -16,7 +16,7 @@ const projects = [
     tech: ['Next', 'MongoDB', 'NextAuth'],
     image: TheGhazalProjectScreen,
     links: {
-      demo: 'https://theghazalproject.com/',
+      demo: 'https://theghazalproject.netlify.app/',
       repo: 'https://github.com/aazibch/theghazalproject'
     }
   },
