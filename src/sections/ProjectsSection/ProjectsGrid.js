@@ -1,7 +1,8 @@
 import { Grid } from '@mui/material';
 import Project from './Project';
 import ReadsTrackerScreen from './screenshots/readstracker.png';
-import SimonScreen from './screenshots/simon.png';
+// import SimonScreen from './screenshots/simon.png';
+
 import YumYumScreen from './screenshots/yumyum.png';
 import VirtuaVisageScreen from './screenshots/virtuavisage.png';
 import CummingsBreitenbergScreen from './screenshots/cummingsbreitenberg.png';
@@ -9,8 +10,29 @@ import WebsoftScreen from './screenshots/websoft.png';
 import ZephyrMessengerScreen from './screenshots/zephyrmessenger.png';
 import GreenEatsScreen from './screenshots/greeneats.png';
 import TheGhazalProjectScreen from './screenshots/theghazalproject.png';
+import LuckySkyBirdsScreen from './screenshots/luckyskybirds.png';
+
+// const olderProjects = [
+//   {
+//     title: 'Simon Game',
+//     tech: ['HTML', 'CSS', 'JavaScript'],
+//     image: SimonScreen,
+//     links: {
+//       demo: 'https://simon-production.netlify.app/',
+//       repo: 'https://github.com/aazibch/simon/'
+//     }
+//   }
+// ];
 
 const projects = [
+  {
+    title: 'Lucky Sky Birds Technical Services',
+    tech: ['WordPress'],
+    image: LuckySkyBirdsScreen,
+    links: {
+      demo: 'https://luckyskybirds.com/'
+    }
+  },
   {
     title: 'The Ghazal Project',
     tech: ['Next', 'MongoDB', 'NextAuth'],
@@ -80,15 +102,6 @@ const projects = [
     links: {
       demo: 'https://yumyum-production.netlify.app/',
       repo: 'https://github.com/aazibch/yumyum/'
-    }
-  },
-  {
-    title: 'Simon Game',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    image: SimonScreen,
-    links: {
-      demo: 'https://simon-production.netlify.app/',
-      repo: 'https://github.com/aazibch/simon/'
     }
   }
 ];
