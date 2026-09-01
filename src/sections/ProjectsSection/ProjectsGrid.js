@@ -1,7 +1,6 @@
 import { Grid } from '@mui/material';
 import Project from './Project';
 import ReadsTrackerScreen from './screenshots/readstracker.png';
-// import SimonScreen from './screenshots/simon.png';
 
 import YumYumScreen from './screenshots/yumyum.png';
 import VirtuaVisageScreen from './screenshots/virtuavisage.png';
@@ -11,18 +10,6 @@ import ZephyrMessengerScreen from './screenshots/zephyrmessenger.png';
 import GreenEatsScreen from './screenshots/greeneats.png';
 import TheGhazalProjectScreen from './screenshots/theghazalproject.png';
 import LuckySkyBirdsScreen from './screenshots/luckyskybirds.png';
-
-// const olderProjects = [
-//   {
-//     title: 'Simon Game',
-//     tech: ['HTML', 'CSS', 'JavaScript'],
-//     image: SimonScreen,
-//     links: {
-//       demo: 'https://simon-production.netlify.app/',
-//       repo: 'https://github.com/aazibch/simon/'
-//     }
-//   }
-// ];
 
 const projects = [
   {
