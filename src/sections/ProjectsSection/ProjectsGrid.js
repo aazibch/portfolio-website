@@ -74,21 +74,21 @@ const projects = [
     }
   },
   {
-    title: 'Websoft',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    image: WebsoftScreen,
-    links: {
-      demo: 'https://websoft.onrender.com/',
-      repo: 'https://github.com/aazibch/websoft/'
-    }
-  },
-  {
     title: 'YumYum',
     tech: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
     image: YumYumScreen,
     links: {
       demo: 'https://yumyum-production.netlify.app/',
       repo: 'https://github.com/aazibch/yumyum/'
+    }
+  },
+  {
+    title: 'Websoft',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    image: WebsoftScreen,
+    links: {
+      demo: 'https://websoft.onrender.com/',
+      repo: 'https://github.com/aazibch/websoft/'
     }
   }
 ];
