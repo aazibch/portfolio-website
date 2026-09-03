@@ -17,7 +17,7 @@ const HeroSection = () => {
             </Typography>
             <Typography color="text.secondary" component="p" fontSize="1.65rem">
               I'm Aazib, a full-stack developer building fast, scalable web
-              applications — where thoughtful design meets robust engineering.
+              applications, where thoughtful design meets robust engineering.
             </Typography>
           </Box>
         </SectionItem>
